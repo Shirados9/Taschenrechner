@@ -1,0 +1,11 @@
+@startuml
+
+interface StackInterface
+
+StackInterface <|-- StackImpl
+StackInterface <|-- MyStack
+
+
+
+
+@enduml

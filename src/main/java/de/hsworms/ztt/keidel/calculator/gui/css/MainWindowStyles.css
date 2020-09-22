@@ -1,0 +1,49 @@
+GridPane {
+    -fx-background-color: #393C5D;
+}
+
+.button {
+    -fx-background-color: #393C5D;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-weight: bold;
+    -fx-font-size: 130%;
+}
+
+.button:hover {
+    -fx-background-color: #4b6987;
+}
+
+#buttonRechner {
+    -fx-background-color: #2E2E46;
+}
+
+#closeApplicationLabel:hover, #minimizeApplicationLabel:hover {
+    -fx-background-color: #404368;
+}
+
+#closeApplicationLabel:hover #closeApplication {
+    -fx-fill: #d42016;
+}
+
+#minimizeApplicationLabel:hover #minimizeApplication {
+    -fx-fill: #20b615;
+}
+
+#toolBar {
+    -fx-background-color: #2E2E46;
+}
+
+#titleBarText {
+    -fx-font-weight: bold;
+    -fx-text-fill: #ecf0f1;
+}
+
+#resultTextField {
+    -fx-background-color: #2E2E46;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #ffffff;
+}
+
+StackPane {
+    -fx-background-color: #2E2E46;
+}

@@ -1,0 +1,107 @@
+#pane, .root, .split-pane {
+    -fx-background-color: #393C5D;
+}
+
+#toolBar {
+    -fx-background-color: #2E2E46;
+}
+
+#titleBarText {
+    -fx-font-weight: bold;
+    -fx-text-fill: #ecf0f1;
+}
+
+.default-color0.chart-series-line {
+    -fx-stroke: #2c2e4e;
+}
+
+.chart-vertical-zero-line, .chart-horizontal-zero-line {
+    -fx-stroke: white;
+}
+
+.chart-plot-background {
+    -fx-background-color: #575758;
+    -fx-foreground-color: white;
+    -fx-stroke: white;
+}
+
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines {
+    -fx-stroke: #898989;
+}
+
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}
+
+.axis {
+    -fx-stroke: white;
+    -fx-fill: white;
+    -fx-font-size: 1.4em;
+    -fx-tick-label-fill: white;
+    -fx-font-family: Tahoma;
+    -fx-tick-length: 0;
+    -fx-minor-tick-length: 0;
+}
+
+.background {
+    -fx-background-color: #674A44;
+    -fx-foreground-color: #353434;
+}
+
+.button {
+    -fx-background-color: #393C5D;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-weight: bold;
+    -fx-font-size: 130%;
+}
+
+#buttonPlot {
+    -fx-button-border: 2px;
+}
+
+.button:hover {
+    -fx-background-color: #4b6987;
+}
+
+.button {
+    -fx-background-color: #393C5D;
+    -fx-text-fill: #ecf0f1;
+    -fx-font-weight: bold;
+    -fx-font-size: 130%;
+}
+
+#buttonFunktionen {
+    -fx-background-color: #2E2E46;
+}
+
+.button:hover {
+    -fx-background-color: #4b6987;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color, 30%);
+}
+
+.text-area .content {
+    -fx-background-color: #575758;
+}
+
+#resultTextField {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-prompt-text-fill: #000000;
+}
+
+#closeApplicationLabel:hover, #minimizeApplicationLabel:hover{
+    -fx-background-color: #404368;
+}
+
+#closeApplicationLabel:hover #closeApplication {
+    -fx-fill: #d42016;
+}
+
+#minimizeApplicationLabel:hover #minimizeApplication{
+    -fx-fill: #20b615;
+}

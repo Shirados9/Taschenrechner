@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="600.0" stylesheets="@../css/PlotWindowStyles.css"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="de.hsworms.ztt.keidel.calculator.gui.fxml.PlotWindowController">
+
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <HBox fx:id="titleBar" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0"
+                  style="-fx-background-color: #2E2E46;">
+                <Label fx:id="titleBarText" text="Taschenrechner" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="14.0"/>
+                    </HBox.margin>
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+                <Region prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS"/>
+                <Label fx:id="minimizeApplicationLabel" alignment="CENTER" contentDisplay="CENTER"
+                       onMouseClicked="#minimizeApp" textFill="WHITE">
+                    <graphic>
+                        <FontAwesomeIconView fx:id="minimizeApplication" fill="WHITE" glyphName="MINUS"
+                                             onMouseClicked="#minimizeApp" size="14"/>
+                    </graphic>
+                    <HBox.margin>
+                        <Insets right="4.0"/>
+                    </HBox.margin>
+                    <padding>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0"/>
+                    </padding>
+                </Label>
+                <Label fx:id="closeApplicationLabel" alignment="CENTER" contentDisplay="CENTER"
+                       onMouseClicked="#closeApp" textFill="WHITE">
+                    <graphic>
+                        <FontAwesomeIconView fx:id="closeApplication" fill="WHITE" glyphName="CLOSE"
+                                             onMouseClicked="#closeApp" size="14"/>
+                    </graphic>
+                    <HBox.margin>
+                        <Insets right="16.0"/>
+                    </HBox.margin>
+                    <padding>
+                        <Insets bottom="4.0" left="4.0" right="4.0" top="4.0"/>
+                    </padding>
+                </Label>
+            </HBox>
+            <ToolBar fx:id="toolBar" prefHeight="20.0" prefWidth="200.0">
+                <Button fx:id="buttonRechner" mnemonicParsing="false" onAction="#changeToMainWindow" text="Rechner"/>
+                <Button fx:id="buttonFunktionen" mnemonicParsing="false" text="Funktionen"/>
+            </ToolBar>
+            <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                <TextField fx:id="resultTextField" alignment="CENTER" maxWidth="1.0" minHeight="-Infinity"
+                           minWidth="-Infinity" prefHeight="30.0" prefWidth="450.0" StackPane.alignment="TOP_LEFT">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </TextField>
+                <Button fx:id="buttonPlot" mnemonicParsing="false" onAction="#handleButtonPlottingAction"
+                        text="Graph anzeigen" StackPane.alignment="CENTER_RIGHT"/>
+            </StackPane>
+        </VBox>
+    </top>
+    <center>
+        <LineChart fx:id="lineChart" BorderPane.alignment="CENTER" legendVisible="false">
+            <xAxis>
+                <NumberAxis autoRanging="true" lowerBound="-10" side="BOTTOM" tickUnit="1" upperBound="10"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis autoRanging="true" lowerBound="-10" side="LEFT" tickUnit="1" upperBound="10"/>
+            </yAxis>
+        </LineChart>
+    </center>
+</BorderPane>
